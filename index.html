@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Someone Special ❤️</title>
+
+<link rel="stylesheet" href="buwtkmuh.css">
+</head>
+<body>
+
+<div class="stars"></div>
+
+<!-- Welcome -->
+<div id="welcomePopup" class="popup">
+    <div class="card">
+        <h1>✨ Welcome ✨</h1>
+        <p>Ada sesuatu yang ingin aku sampaikan...</p>
+        <button onclick="start()">Masuk</button>
+    </div>
+</div>
+
+<!-- Verifikasi -->
+<div id="verify" class="hidden card">
+    <h2>🔐 Verifikasi Dulu</h2>
+
+    <input type="password"
+    id="codeInput"
+    placeholder="Masukkan kode">
+
+    <button onclick="checkCode()">
+        Verifikasi
+    </button>
+</div>
+
+<!-- Surprise -->
+<div id="surprise" class="hidden">
+
+    <h1>❤️ Surprise ❤️</h1>
+
+    <div id="typingText"></div>
+
+    <div id="extraContent" class="hidden">
+
+        <div class="countdown">
+            <h3>⏳ Waktu Bersama</h3>
+            <p id="timer"></p>
+        </div>
+
+        <div class="carousel">
+            <img id="photo" src="1.jpeg">
+        </div>
+
+        <button class="loveBtn" onclick="showFinalMessage()">
+            ❤️ Klik Aku ❤️
+        </button>
+
+    </div>
+
+</div>
+
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script src="bwtkmuh.js"></script>
+
+</body>
+</html>
